@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1, p, a, select, button {
+    font-family: 'Inter', sans-serif;
+    color: #000;
+    font-size: 14px;
+}
+
+button, select {
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    width: 1174px;
+    margin: 0 auto;
+}
+
+/* header */
+.header {
+    padding-top: 40px;
+    padding-bottom: 84px;
+}
+
+.navigation {}
+
+.menu {
+    margin: 10px;
+    font-weight: 400;
+}
+
+.menu a.home {
+    font-weight: 600;
+    color: #F25822
+}
+/* end header */
+
+/* main */
+.main {
+    margin-bottom: 100px;
+}
+
+.main_content__left_side h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.main_content__left_side p {
+    font-size: 20px;
+    line-height: 140%;
+    color: #888;
+    padding-top: 20px;
+}
+
+.main_content__left_side-buttons {
+    padding-top: 32px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.main_content__left_side-buttons button {
+    background-color: #F25822;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 56px;
+    padding: 16px 31px;
+    font-weight: 600;
+}
+
+.main_content__left_side-buttons button.watch_video {
+    background-color: #fff;
+    color: #aaa;
+    margin-left: 17px;
+}
+/* end main */
+
+/* footer */
+.footer {
+    padding: 100px 0;
+}
+/* end footer */
