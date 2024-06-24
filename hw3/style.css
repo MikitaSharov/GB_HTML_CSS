@@ -15,7 +15,7 @@ img {
     max-width: 100%;
 }
 
-h1, p, a, select, button {
+h1, h2, h3, p, a, select, button {
     font-family: 'Inter', sans-serif;
     color: #000;
     font-size: 14px;
@@ -75,13 +75,10 @@ button, select {
 /* end header */
 
 /* main */
-.main {
-    margin-bottom: 100px;
-}
-
 .main_content {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 100px;
 }
 
 .main_content__left_side h1 {
@@ -117,15 +114,122 @@ button, select {
     color: #aaa;
     margin-left: 17px;
 }
-/* end main */
-
-/* footer */
-.footer {
-    padding: 100px 0;
-}
 
 .logos_row {
     display: flex;
     justify-content: space-between;
+    padding: 100px 0;
 }
-/* end footer */
+
+.motivation {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 61px;
+    padding: 100px 0;
+}
+
+.motivation__card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.motivation__card-center {
+    padding: 40px 34px;
+    box-shadow: 15px 25px 56px 1px rgba(0, 0, 0, 0.06);
+}
+
+.motivation__card-text h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.motivation__card-text p {
+    width: 310px;
+    padding-top: 18px;
+    line-height: 150%;
+    color: #666;
+}
+
+.motivation__card a {
+    line-height: 150%;
+    font-weight: 600;
+}
+
+.usp_background {
+    background-color: #fafafa;
+}
+
+.usp {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.usp h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.usp h3 {
+    width: 740px;
+    color: #888;
+    font-size: 16px;
+    line-height: 140%;
+    padding-top: 24px;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+.usp__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding-top: 48px;
+}
+
+.usp__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+
+.usp__card-center {
+    box-shadow: 15px 25px 56px 1px rgba(0, 0, 0, 0.06);
+}
+
+.usp__card-text {
+    padding: 32px 34px 34px;
+}
+
+.usp__card-text h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.usp__card-text p {
+    font-size: 16px;
+    line-height: 150%;
+    color: #666;
+    padding-top: 16px;
+}
+
+.usp__card-text button {
+    background-color: #F25822;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 56px;
+    padding: 16px 32px;
+    margin-top: 24px;
+    font-weight: 600;
+    box-shadow: 4px 4px 8px 0 rgba(242, 88, 34, 0.2);
+}
+
+
+
+
+
+/* end main */
