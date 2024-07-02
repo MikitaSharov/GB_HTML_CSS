@@ -65,6 +65,12 @@ p, a, span, h1, h2, h3, button {
     align-items: flex-end;
 }
 
+.header__banner-image {
+    width: 800px;
+    height: 764px;
+    background: url("./img/banner_photo.png") no-repeat center center/cover;
+}
+
 .header__banner-text {
     width: 393px;
     border-left: 12px solid;
@@ -209,4 +215,85 @@ p, a, span, h1, h2, h3, button {
     border: 1px solid #FF6A6A;
     margin-top: 48px;
     padding: 15px 39px 14px;
+}
+
+@media (max-width: 1139px) {
+    .container {
+        max-width: 736px;
+    }
+    
+    .header__nav-left {
+        display: flex;
+        padding: 18px 0  18px 32px;
+    }
+    
+    .header__nav-right {
+        display: flex;
+        gap: 41px;
+        padding: 19px 32px 18px;
+    }
+    
+    .banner_container {
+        max-width: 768px;
+        align-items: center;
+    }
+    
+    .header__banner-image {
+        width: 386px;
+        height: 368px;
+        background: url("./img/banner_photo_tablet.png") no-repeat center center/cover;
+    }
+    
+    .header__banner-text {
+        width: 311px;
+        margin-left: 39px;
+        margin-bottom: 0;
+    }
+    
+    .header__banner-text h1, .header__banner-text span {
+        padding-left: 16px;
+        color: #222;
+    }
+    
+    .header__banner-text h1 {
+        font-size: 44px;
+        font-weight: 900;
+        line-height: 52.8px;
+    }
+    
+    .header__banner-text span {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28.8px;
+    }
+
+    .main__nav {
+        padding-top: 65px;
+        grid-template-columns: 232px 232px 232px;
+        grid-template-rows: 167px 116px;
+        gap: 20px;
+    }
+
+    .main__products {
+        padding: 110px 0 70px;
+    }
+    
+    .main__products p {
+        padding-top: 3.3px;
+    }
+    
+    .main__products__grid {
+        padding-top: 72px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    
+    .main__products__grid__card-text {
+        margin: 23px auto 20px 16px;
+    }
+    
+    .main__products button {
+        margin-top: 32px;
+    }
+
 }
