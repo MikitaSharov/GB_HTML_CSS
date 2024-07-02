@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background-color: inherit
+}
+
+p, a, span, h1, h2, h3, button {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* header */
+.header {
+    background-color: #222222;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__nav-left {
+    display: flex;
+    padding: 18px 0 19px;
+    gap: 41px;
+}
+
+.header__nav-right {
+    display: flex;
+    gap: 33px;
+    padding: 26px 0 20px;
+}
+
+.header__banner {
+    background-color: #F1E4E6;
+}
+
+.banner_container {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.header__banner-text {
+    width: 393px;
+    border-left: 12px solid;
+    margin-left: 63px;
+    color: #F16D7F;
+    margin-bottom: 381px;
+}
+
+.header__banner-text h1, .header__banner-text span {
+    padding-left: 16px;
+    color: #222;
+}
+
+.header__banner-text h1 {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 57.6px;
+}
+
+.header__banner-text span {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+}
+
+.header__banner-text span.header__banner-color{
+    padding-left: 0;
+    color: inherit;
+}
+
+.main__nav {
+    padding-top: 65px;
+    display: grid;
+    grid-template-columns: 360px 360px 360px;
+    grid-template-rows: 260px 180px;
+    gap: 30px;
+}
+
+.main__nav-woman {
+    background: url(./img/woman.png)  no-repeat center center/cover;
+}
+
+.main__nav-men {
+    background: url(./img/men.png)  no-repeat center center/cover;
+}
+
+.main__nav-kids {
+    background: url(./img/kids.png)  no-repeat center center/cover;
+}
+
+.main__nav-accesories {
+    background: url(./img/accesories.png)  no-repeat center center/cover;
+    grid-column: span 3;
+}
+
+.main__nav-background {
+    background: rgba(33, 22, 22, 0.7);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__nav-text {
+    text-align: center;
+}
+
+.main__nav-text p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 19.2px;
+}
+
+.main__nav-text span {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    color: #F16D7F;
+}
+
+.main__products {
+    padding: 96px 0 60px;
+    text-align: center;
+}
+
+.main__products h3 {
+    font-size: 30px;
+    line-height: 36px;
+    color: #222;
+}
+
+.main__products p {
+    font-size: 14px;
+    line-height: 16.8px;
+    color: #9F9F9F;
+    padding-top: 6px;
+}
+
+.main__products__grid {
+    padding-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.main__products__grid__card {
+    background-color: #F8F8F8;
+}
+
+.main__products__grid__card-text {
+    margin: 24px auto 24px 16px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 16px;
+}
+
+.main__products__grid__card-text h3 {
+    font-size: 13px;
+    line-height: 15.6px;
+    color: #000;
+}
+
+.main__products__grid__card-text p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16.8px;
+    color: #5D5D5D;
+    padding-top: 0;
+}
+
+.main__products__grid__card-text span {
+    font-size: 16px;
+    line-height: 19.2px;
+    color: #F16D7F;
+}
+
+.main__products button {
+    font-size: 16px;
+    line-height: 19.2px;
+    color: #F26376;
+    border: 1px solid #FF6A6A;
+    margin-top: 48px;
+    padding: 15px 39px 14px;
+}
