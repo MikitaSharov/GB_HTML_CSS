@@ -257,13 +257,11 @@ p, a, span, h1, h2, h3, button {
     
     .header__banner-text h1 {
         font-size: 44px;
-        font-weight: 900;
         line-height: 52.8px;
     }
     
     .header__banner-text span {
         font-size: 24px;
-        font-weight: 700;
         line-height: 28.8px;
     }
 
@@ -296,4 +294,79 @@ p, a, span, h1, h2, h3, button {
         margin-top: 32px;
     }
 
+}
+
+@media (max-width: 735px) {
+    .container {
+        max-width: 343px;
+    }
+
+    .header__nav-left {
+        padding: 18px 0;
+    }
+    
+    .header__nav-right {
+        padding: 25px 0 26px;
+    }
+
+    .header__nav-right_btn-hidden {
+        display: none;
+    }
+
+    .banner_container {
+        max-width: 343px;
+        justify-content: center;
+    }
+    
+    .header__banner-image {
+        display: none;
+    }
+    
+    .header__banner-text {
+        width: 263px;
+        margin: 148px 0 148px 8px;
+    }
+    
+    .header__banner-text h1, .header__banner-text span {
+        padding-left: 15px;
+    }
+    
+    .header__banner-text h1 {
+        font-size: 38px;
+        line-height: 45.6px;
+    }
+    
+    .header__banner-text span {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .main__nav {
+        padding-top: 64px;
+        grid-template-columns: 343px;
+        grid-template-rows: repeat(3, 248px) 111px;
+        gap: 32px;
+    }
+
+    .main__nav-accesories {
+        grid-column: unset;
+    }
+
+    .main__products {
+        padding: 64px 0 85px;
+    }
+    
+    .main__products__grid {
+        padding-top: 64.7px;
+        grid-template-columns: 1fr;
+        gap: 15.61px;
+    }
+    
+    .main__products__grid__card-text {
+        margin: 24px auto 20px 16px;
+    }
+    
+    .main__products button {
+        margin-top: 40px;
+    }
 }
