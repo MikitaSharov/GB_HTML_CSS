@@ -92,16 +92,15 @@ p, a, span, h1, h2, h3, button {
     color: #6F6E6E;
     min-width: 232px;
     padding: 32px 0 32px 32px;
-    /* visibility: hidden;
+    visibility: hidden;
     opacity: 0;
-    transition: visibility 0.3s, opacity 0.3s; */
+    transition: visibility 0.3s, opacity 0.3s;
 }
 
-/* .header__nav-right:hover .burger:hover + .header__menu,
-.header__menu:hover {
+.header__menu.visible {
     visibility: visible;
     opacity: 1;
-} */
+}
 
 .header__menu h2 {
     font-size: 14px;
