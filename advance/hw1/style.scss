@@ -605,6 +605,34 @@ summary::-webkit-details-marker {
         background: #FF6A6A;
         color: #fff;
     }
+
+    &__cart-grid {
+        display: grid;
+        grid-template-columns: 652px 360px;
+        justify-content: space-between;
+    }
+
+    &__cartOrderBox {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding-top: 96px;
+    }
+
+    &__cartProductBox {
+        display: flex;
+        // border: $border;
+        box-shadow: 17px 19px 24px 0 rgba(0, 0, 0, 0.13);
+    }
+
+    &__cartProductDiscription {
+        width: 262px;
+        margin: 22px 97px 62px 31px;
+    }
+
+    &__cartBtnBox {
+        padding-top: 32px;
+    }
 }
 
 .feature {
