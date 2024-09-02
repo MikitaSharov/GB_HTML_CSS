@@ -640,6 +640,41 @@ summary::-webkit-details-marker {
   padding-left: 0;
   cursor: pointer;
 }
+.main__cartCheckout {
+  background: #F5F3F3;
+}
+.main__cartCheckout-content {
+  width: 275px;
+  margin: 0 auto;
+  padding-top: 39px;
+  padding-bottom: 42px;
+  text-align: right;
+  color: #4A4A4A;
+}
+.main__cartCheckout-content p.sub-total {
+  font-size: 11px;
+  line-height: 13.2px;
+}
+.main__cartCheckout-content p.grand-total {
+  font-size: 16px;
+  line-height: 19.2px;
+  margin-top: 12px;
+  margin-bottom: 21px;
+}
+.main__cartCheckout-content span {
+  color: #F16D7F;
+  font-weight: 700;
+}
+.main__cartCheckout-content button {
+  background-color: #F16D7F;
+  height: 50px;
+  width: 273px;
+  margin-top: 17px;
+  margin-right: 1px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 19.2px;
+}
 
 .feature {
   max-width: 1600px;
