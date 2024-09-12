@@ -721,6 +721,14 @@ summary::-webkit-details-marker {
   color: #fff;
   margin-top: 20px;
 }
+.registration__form button:hover {
+  color: #F16D7F;
+  background: #fff;
+  border: 1px solid #FF6A6A;
+}
+.registration__form button:hover path {
+  fill: #F16D7F;
+}
 .registration__form svg {
   padding-left: 20px;
 }

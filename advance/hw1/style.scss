@@ -823,6 +823,16 @@ summary::-webkit-details-marker {
             background-color: $colorPink;
             color: #fff;
             margin-top: 20px;
+
+            &:hover {
+                color: $colorPink;
+                background: #fff;
+                border: $borderBtn
+
+                & path {
+                    fill: $colorPink;            
+                }
+            }
         }
 
         & svg {
