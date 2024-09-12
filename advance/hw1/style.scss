@@ -837,6 +837,10 @@ summary::-webkit-details-marker {
         margin-top: 12px;
         margin-bottom: 12px;
 
+        & input[type="radio"] {
+            width: 16px;
+            height: 16px;
+        }
 
         & label {
             font-size: 11px;

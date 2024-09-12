@@ -731,6 +731,10 @@ summary::-webkit-details-marker {
   margin-top: 12px;
   margin-bottom: 12px;
 }
+.registration__radio input[type=radio] {
+  width: 16px;
+  height: 16px;
+}
 .registration__radio label {
   font-size: 11px;
   line-height: 13.2px;
