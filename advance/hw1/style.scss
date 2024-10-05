@@ -302,23 +302,28 @@ summary::-webkit-details-marker {
 
 .banner {
     background-color: #F1E4E6;
-    display: flex;
     justify-content: flex-start;
     align-items: flex-end;
     position: relative;
 
+    &__content {
+        display: flex;
+        position: relative;
+        align-items: center;
+    }
+
     &__image {
         width: 800px;
         height: 764px;
-        background: url("./img/banner_photo.png") no-repeat center center/cover;
+        margin-left: -231px;
+        background: url("./img/banner_photo.jpg") no-repeat center center/cover;
     }
     
     &__text {
-        width: 393px;
+        width: 410px;
         border-left: 12px solid;
-        margin-left: 63px;
+        margin-left: 64px;
         color: $colorPink;
-        margin-bottom: 381px;
     }
     
     &__text h1, .banner__text span {
@@ -456,8 +461,7 @@ summary::-webkit-details-marker {
 
 .main {
     &__nav {
-        padding-top: 65px;
-        margin-bottom: -30px;
+        margin-top: 64px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 260px 180px;
@@ -509,8 +513,8 @@ summary::-webkit-details-marker {
     }
     
     &__products_grid {
-        padding-top: 128px;
-        padding-bottom: 128px;
+        padding-top: 96px;
+        padding-bottom: 96px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
@@ -712,6 +716,7 @@ summary::-webkit-details-marker {
             height: 45px;
             padding-left: 17px;
             border: $border;
+            box-sizing: border-box;
 
             &::placeholder {
                 color: #222222;
@@ -784,6 +789,36 @@ summary::-webkit-details-marker {
     }
 }
 
+.pagination {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #EBEBEB;
+    grid-column: span 3;
+    width: 284px;
+    margin: 0 auto;
+    margin-top: 18px;
+
+
+    &__next svg {
+        transform: rotate(180deg);
+    }
+}
+
+.pagination a {
+    color: #EBEBEB;
+    padding: 15px;
+    @include font16_h19;
+    font-weight: 300;
+}
+
+.pagination a.active {
+    color: $colorPink;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: $colorPink;
+}
+
 .registration {
     &_flex {
         display: flex;
@@ -852,6 +887,10 @@ summary::-webkit-details-marker {
         margin-top: 12px;
         margin-bottom: 12px;
 
+        #radioOther, .radioOther {
+            display: none;
+        }
+
         & input[type="radio"] {
             width: 16px;
             height: 16px;
@@ -898,6 +937,7 @@ summary::-webkit-details-marker {
     &__content {
         color: #FBFBFB;
         display: flex;
+        justify-content: space-between;
         padding: 104px 0;
         gap: 30px;
     }
@@ -917,7 +957,7 @@ summary::-webkit-details-marker {
     }
     
     &__content p {
-        width: 360px;
+        max-width: 360px;
         font-size: 14px;
         line-height: 16.77px;
     }
@@ -972,7 +1012,7 @@ summary::-webkit-details-marker {
         flex-direction: column;
         align-items: center;
         gap: 32px;
-        max-width: 557px;
+        width: 557px;
         text-align: center;
         color: #222224;
     }
@@ -1058,7 +1098,185 @@ summary::-webkit-details-marker {
     }
 }
 
+@media (max-width: 1140px) {
+    .container {
+        max-width: 736px;
+    }
 
+    .header {
+        &__nav-left {
+            padding-left: 16px;
+        }
+
+        &__nav-right {
+            padding-right: 16px;
+        }
+    }
+
+    .banner {
+        &__content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+
+        &__image {
+            width: 385px;
+            height: 370px;
+            margin-left: -16px;
+            background: url("./img/banner_tablet.jpg") no-repeat center center/cover;
+        }
+
+        &__text {
+            margin: 0;
+            width: 311px;
+
+            & h1 {
+                font-size: 44px;
+                line-height: 52.8px;
+            }
+
+            & span {
+                font-size: 24px;
+                line-height: 28.8px;
+            }
+        }
+    }
+
+    .main {
+        &__nav {
+            margin-top: 20px;
+            gap: 20px;
+            grid-template-rows: 232px 116px;
+        }
+
+        &__products {
+            &_grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+                padding-top: 155px;
+                padding-bottom: 64px;
+            }
+
+            &-heading {
+                grid-column: span 2;
+            }
+        }
+
+        &__button {
+            width: 212px;
+            grid-column: span 2;
+            margin: 16px auto 0 auto;
+        }
+    }
+
+    .feature {
+        &__content {
+            flex-direction: column;
+            padding-top: 48px;
+            padding-bottom: 64px;
+        }
+    }
+
+    .subscribe {
+        &_container {
+            background: url(./img/subscribe_bgrd_tablet.png) no-repeat center center / cover;
+        }
+
+        &__content {
+            flex-direction: column;
+            gap: 48px;
+            padding-top: 64px;
+            padding-bottom: 140px;
+        }
+
+        &__info {
+            margin: 0;
+        }
+
+        &__subscribe {
+            gap: 27px;
+        }
+
+        &__text h2 {
+            line-height: 38.88px;
+        }
+    }
+
+    .footer {
+        &__content {
+            & p {
+                padding-left: 16px;
+            }
+
+            & nav {
+                padding-right: 16px;
+            }
+        }
+    }
+
+    .main {
+        &__cart-grid {
+            grid-template-columns: 1fr;
+        }
+
+        &__cartOrderBox {
+            padding-top: 59px;
+        }
+
+        &__cartBtnBox {
+            justify-content: center;
+            gap: 48px;
+            padding-top: 22px;
+        }
+
+        &__cartShippingBox {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            padding-top: 64px;
+            align-items: flex-start;
+
+            & form {
+                width: 100%;
+            }
+        }
+
+        &__cartCheckout {
+            width: 100%;
+            margin-top: 39px;
+        }
+    }
+
+    .filter-sort {
+        padding-top: 24px;
+        margin-bottom: -115px;
+        justify-content: space-between;
+    }
+
+    .pagination {
+        grid-column: span 2;
+    }
+
+    .registration {
+        &_flex {
+            margin-top: 40px;
+        }
+
+        &__text {
+            width: 354px;
+
+            & p, li {
+                @include font16_h19;
+            }
+        }
+
+        #radioOther, .radioOther {
+            display: block;
+        }
+    }
+}
 
 // &__menu {
 //     position: absolute;
