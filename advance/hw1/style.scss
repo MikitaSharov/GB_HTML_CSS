@@ -1278,6 +1278,114 @@ summary::-webkit-details-marker {
     }
 }
 
+@media (max-width: 767px) {
+    .container {
+        max-width: 343px;
+    }
+
+    .header {
+        &__nav-right_btn-hidden {
+            display: none;
+        }
+    }
+
+    .banner {
+        height: 363px;
+
+        &__content {
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        &__image {
+            display: none;
+        }
+
+        &__text {
+            width: 263px;
+
+            & h1 {
+                font-size: 38px;
+                line-height: 45.6px;
+            }
+
+            & span {
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    .main {
+        &__nav {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 247px) 111px;
+            gap: 32px;
+            margin: 64px auto;
+        }
+
+        &__nav-accesories {
+            grid-column: unset;
+        }
+
+        &__products {
+            &-heading {
+                grid-column: unset;
+                padding-bottom: 48px;
+            }
+
+            &_grid {
+                padding-top: 0;
+                padding-bottom: 96px;
+                grid-template-columns: 1fr;
+
+                &_card {
+                    margin: 0 -8px;
+                }
+            }
+            
+        }
+
+        &__button {
+            grid-column: unset;
+            margin-top: 24px;
+        }
+    }
+
+    .subscribe {
+        &__subscribe {
+            max-width: 100%;
+        }
+
+        &__text p {
+            font-size: 14px;
+            line-height: 21.45px;
+        }
+    }
+
+    .footer {
+        &__content {
+            flex-direction: column-reverse;
+            gap: 40px;
+
+            & nav {
+                padding: 0;
+            }
+
+            & p {
+                padding: 0;
+                margin-bottom: 9px;
+            }
+        }
+
+        &__social-link {
+            margin-top: 43px;
+            margin-bottom: 0;
+        }
+    }
+}
+
 // &__menu {
 //     position: absolute;
 //     top: 0;
