@@ -102,7 +102,7 @@ summary::-webkit-details-marker {
 .header__nav-right {
   display: flex;
   gap: 33px;
-  padding: 26px 0 20px;
+  padding: 26px 10px 20px;
 }
 .header__cart {
   position: relative;
@@ -280,6 +280,7 @@ summary::-webkit-details-marker {
   border-left: 12px solid;
   margin-left: 64px;
   color: #F16D7F;
+  margin-bottom: 90px;
 }
 .banner__text h1, .banner .banner__text span {
   padding-left: 16px;
@@ -1093,6 +1094,9 @@ summary::-webkit-details-marker {
   .header__nav-right_btn-hidden {
     display: none;
   }
+  .breadcrumbs__content h2 {
+    margin: 60px auto;
+  }
   .banner {
     height: 363px;
   }
@@ -1139,6 +1143,9 @@ summary::-webkit-details-marker {
   .main__button {
     grid-column: unset;
     margin-top: 24px;
+  }
+  .main__cart-grid {
+    margin: 0 -8px;
   }
   .subscribe__subscribe {
     max-width: 100%;
