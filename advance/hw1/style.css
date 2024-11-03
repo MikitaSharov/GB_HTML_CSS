@@ -595,6 +595,7 @@ summary::-webkit-details-marker {
   border: 1px solid #A4A4A4;
   width: 235px;
   height: 50px;
+  text-transform: uppercase;
 }
 .main__cartShippingBox {
   padding-top: 113px;
@@ -1098,9 +1099,11 @@ summary::-webkit-details-marker {
   }
   .header__nav-left {
     padding-left: 0;
+    margin-left: 0;
   }
   .header__nav-right {
     padding-right: 0;
+    margin-right: 0;
   }
   .breadcrumbs__content h2 {
     margin: 60px auto;
@@ -1153,6 +1156,113 @@ summary::-webkit-details-marker {
     margin-top: 24px;
   }
   .main__cart-grid {
+    margin: 0 -8px;
+    padding-bottom: 96px;
+  }
+  .main__cartOrderBox {
+    gap: 32px;
+    padding-top: 39px;
+  }
+  .main__cartProductBox svg {
+    transform: scale(0.55);
+  }
+  .main__cartProductBox img {
+    width: 144px;
+  }
+  .main__cartProductBox a {
+    top: 17px;
+    right: 12px;
+  }
+  .main__cartProductDiscription {
+    margin: 13px 54px 37px 17px;
+  }
+  .main__cartProductDiscription-heading {
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+  .main__cartProductDiscription-options p {
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+  .main__cartProductDiscription-options span.qty {
+    margin-left: 15px;
+  }
+  .main__cartBtnBox {
+    gap: 9px;
+    padding-top: 0;
+  }
+  .main__cartBtnBox button {
+    width: 175px;
+    height: 33px;
+    text-transform: none;
+  }
+  .main__cartShippingBox {
+    flex-direction: column;
+    padding-top: 48px;
+    gap: 0;
+  }
+  .main__cartShippingBox form {
+    padding-bottom: 0;
+  }
+  .main__cartCheckout {
+    margin-top: 48px;
+  }
+  .breadcrumbs__content {
+    flex-direction: column;
+    gap: 32px;
+    padding: 24px;
+    padding-bottom: 46px;
+  }
+  .breadcrumbs__content h2 {
+    margin: 0 auto;
+  }
+  .breadcrumbs__registration {
+    padding-bottom: 14px;
+    padding-top: 36px;
+  }
+  .filter {
+    width: 38px;
+  }
+  .filter-sort {
+    margin: 0 12px;
+    padding-bottom: 24px;
+  }
+  .filter__heading {
+    display: none;
+  }
+  .sort {
+    gap: 24px;
+  }
+  .sort span {
+    font-size: 12px;
+    line-height: 14.4px;
+  }
+  .pagination {
+    grid-column: unset;
+  }
+  .product-description {
+    margin-top: 0;
+    margin-bottom: 64px;
+    border: none;
+    border-bottom: 1px solid #EAEAEA;
+  }
+  .product-description__hr-gray {
+    width: 175px;
+    margin-top: 32px;
+    margin-bottom: 49px;
+  }
+  .product-description__selects {
+    width: 304px;
+  }
+  .product-description__selects select {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .registration_flex {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .registration__form {
     margin: 0 -8px;
   }
   .subscribe__subscribe {
