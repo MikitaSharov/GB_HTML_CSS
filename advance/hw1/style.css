@@ -1023,7 +1023,7 @@ summary::-webkit-details-marker {
   .subscribe__content {
     flex-direction: column;
     gap: 48px;
-    padding-top: 64px;
+    padding-top: 0;
     padding-bottom: 140px;
   }
   .subscribe__info {
