@@ -1023,7 +1023,7 @@ summary::-webkit-details-marker {
   .subscribe__content {
     flex-direction: column;
     gap: 48px;
-    padding-top: 0;
+    padding-top: 64px;
     padding-bottom: 140px;
   }
   .subscribe__info {
@@ -1043,6 +1043,7 @@ summary::-webkit-details-marker {
   }
   .main__cart-grid {
     grid-template-columns: 1fr;
+    padding-bottom: 68px;
   }
   .main__cartOrderBox {
     padding-top: 59px;
