@@ -70,104 +70,7 @@ p, a, span, h1, h2, h3, button {
     background-color: #F16D7F;
 }
 
-.header__banner {
-    background-color: #F1E4E6;
-}
 
-.banner_container {
-    max-width: 1600px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    position: relative;
-}
-
-.header__menu {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #fff;
-    box-shadow: 6px 4px 25px 0 rgba(0, 0, 0, 0.21);
-    color: #6F6E6E;
-    min-width: 232px;
-    padding: 32px 0 32px 32px;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0.3s, opacity 0.3s;
-}
-
-.header__menu.visible {
-    visibility: visible;
-    opacity: 1;
-}
-
-.header__menu h2 {
-    font-size: 14px;
-    line-height: 16.8px;
-    font-weight: 700;
-    padding-bottom: 4px;
-    padding-left: 1px;
-    color: #000;
-}
-
-.header__menu ul {
-    list-style-type: none;
-    font-size: 14px;
-    line-height: 16.8px;
-}
-
-.header__menu li{
-    margin-top: 12px;
-}
-
-.header__menu li:first-child {
-    margin-left: 0;
-    margin-top: 20px;
-    color: #F16D7F;
-}
-
-.header__menu li {
-    margin-left: 21.5px;
-}
-
-
-
-.header__banner-image {
-    width: 800px;
-    height: 764px;
-    background: url("./img/banner_photo.png") no-repeat center center/cover;
-}
-
-.header__banner-text {
-    width: 393px;
-    border-left: 12px solid;
-    margin-left: 63px;
-    color: #F16D7F;
-    margin-bottom: 381px;
-}
-
-.header__banner-text h1, .header__banner-text span {
-    padding-left: 16px;
-    color: #222;
-}
-
-.header__banner-text h1 {
-    font-size: 48px;
-    font-weight: 900;
-    line-height: 57.6px;
-}
-
-.header__banner-text span {
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 38.4px;
-}
-
-.header__banner-text span.header__banner-color{
-    padding-left: 0;
-    color: inherit;
-}
 
 .main__nav {
     padding-top: 65px;
@@ -237,14 +140,14 @@ p, a, span, h1, h2, h3, button {
     padding-top: 6px;
 }
 
-.main__products__grid {
+.main__products_grid {
     padding-top: 48px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
-.main__products__grid__card {
+.main__products_grid_card {
     background-color: #F8F8F8;
 }
 
@@ -286,7 +189,7 @@ p, a, span, h1, h2, h3, button {
     opacity: 1;
 }
 
-.main__products__grid__card-text {
+.main__products_grid_card-text {
     margin: 24px auto 24px 16px;
     display: flex;
     flex-direction: column;
@@ -294,13 +197,13 @@ p, a, span, h1, h2, h3, button {
     gap: 16px;
 }
 
-.main__products__grid__card-text h3 {
+.main__products_grid_card-text h3 {
     font-size: 13px;
     line-height: 15.6px;
     color: #000;
 }
 
-.main__products__grid__card-text p {
+.main__products_grid_card-text p {
     font-size: 14px;
     font-weight: 300;
     line-height: 16.8px;
@@ -308,7 +211,7 @@ p, a, span, h1, h2, h3, button {
     padding-top: 0;
 }
 
-.main__products__grid__card-text span {
+.main__products_grid_card-text span {
     font-size: 16px;
     line-height: 19.2px;
     color: #F16D7F;
@@ -522,29 +425,29 @@ p, a, span, h1, h2, h3, button {
         align-items: center;
     }
     
-    .header__banner-image {
+    .banner__image {
         width: 386px;
         height: 368px;
         background: url("./img/banner_photo_tablet.png") no-repeat center center/cover;
     }
     
-    .header__banner-text {
+    .banner__text {
         width: 311px;
         margin-left: 39px;
         margin-bottom: 0;
     }
     
-    .header__banner-text h1, .header__banner-text span {
+    .banner__text h1, .banner__text span {
         padding-left: 16px;
         color: #222;
     }
     
-    .header__banner-text h1 {
+    .banner__text h1 {
         font-size: 44px;
         line-height: 52.8px;
     }
     
-    .header__banner-text span {
+    .banner__text span {
         font-size: 24px;
         line-height: 28.8px;
     }
@@ -639,25 +542,25 @@ p, a, span, h1, h2, h3, button {
         justify-content: center;
     }
     
-    .header__banner-image {
+    .banner__image {
         display: none;
     }
     
-    .header__banner-text {
+    .banner__text {
         width: 263px;
         margin: 148px 0 148px 8px;
     }
     
-    .header__banner-text h1, .header__banner-text span {
+    .banner__text h1, .banner__text span {
         padding-left: 15px;
     }
     
-    .header__banner-text h1 {
+    .banner__text h1 {
         font-size: 38px;
         line-height: 45.6px;
     }
     
-    .header__banner-text span {
+    .banner__text span {
         font-size: 20px;
         line-height: 24px;
     }
