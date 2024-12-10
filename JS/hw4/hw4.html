@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
     <body>
         <input id="from" type="text">В инпуте написано: <span></span>
 
@@ -19,13 +18,12 @@
         <br>
 
         <form>
-            <label>
-                Первый инпут: <input class="form-control" type="text">
+            <label>Первый инпут:
+                <input class="form-control" type="text">
             </label>
             <br>
             <br>
-            <label>
-                Второй инпут:
+            <label>Второй инпут:
                 <select class="form-control">
                     <option value=""></option>
                     <option value="1">Один</option>
@@ -38,13 +36,15 @@
         </form>
 
         <script>
-            // 1. При изменении значения в input с id="from", значение содержащееся в нем должно моментально отображаться в span. То есть при печати в input'е тег span также должен меняться.
+            /*
+            1. При изменении значения в input с id="from", значение содержащееся в нем должно моментально отображаться в span. То есть при печати в input'е тег span также должен меняться.
+            */
 
-            const inputFromEl = document.querySelector('#from');
+            const fromEl = document.querySelector('#from');
             const spanEl = document.querySelector('span');
 
-            inputFromEl.addEventListener('input', (e) => {
-                spanEl.textContent = inputFromEl.value;
+            fromEl.addEventListener('input', () => {
+                spanEl.textContent = fromEl.value;
             });
 
             /*
@@ -53,18 +53,60 @@
             - поставить данному элементу стиль visibility в значение 'visible'.
             */
 
-            const messageBtnEl = document.querySelector('.messageBtn');
+            const messageBtn = document.querySelector('.messageBtn');
             const messageEl = document.querySelector('.message');
-            messageBtnEl.addEventListener('click', (e) => {
+
+            messageBtn.addEventListener('click', () => {
                 messageEl.classList.add(...['animate_animated', 'animate_fadeInLeftBig']);
-                messageEl.setAttribute('style', 'visibility: visible;')
+                messageEl.setAttribute('style', 'visibility: visible;');
             })
 
             /*
             3. Необходимо при отправке формы проверить, заполнены ли все поля в этой форме. Если какое-либо поле не заполнено, форма не должна отправляться, также должны быть подсвечены незаполненные поля (необходимо поставить класс error незаполненным полям). Как только пользователь начинает заполнять какое-либо поле, необходимо, при вводе в данное поле, произвести проверку:
-            - Если поле пустое, необходимо данное поле подсветить (по~ставить класс error данному полю).
+            - Если поле пустое, необходимо данное поле подсветить (поставить класс error данному полю).
             - Если поле было чем-либо заполнено, подсветку (класс error) необходимо убрать.
             */
+
+            const formEl = document.querySelector('form');
+            const formControlEls = formEl.querySelectorAll('.form-control');
+            
+            // Проверка поля
+            const validateField = (field) => {
+                const isValid = field.value.trim() !== '';
+                field.classList.toggle('error', !isValid);
+                return isValid;
+            };
+            
+            // Проверка при фокусе
+            formControlEls.forEach(field => {
+                field.addEventListener('focus', () => {
+                    if (field.value.trim() === '') {
+                        field.classList.add('error');
+                    }
+                });
+            
+                // Реалтайм проверка при вводе
+                field.addEventListener('input', () => validateField(field));
+            });
+            
+            // Проверка перед отправкой формы
+            formEl.addEventListener('submit', (e) => {
+                let isFormValid = true;
+            
+                formControlEls.forEach(field => {
+                    const isFieldValid = validateField(field);
+                    if (!isFieldValid) {
+                        isFormValid = false;
+                    }
+                });
+            
+                if (!isFormValid) {
+                    alert('Все поля должны быть заполнены!');
+                    e.preventDefault();
+                }
+            });
+            
+
         </script>
     </body>
 </html>
