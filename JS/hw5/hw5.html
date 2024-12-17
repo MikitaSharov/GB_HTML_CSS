@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="user">
+    
+    </div>
+
+    <script src="./data.js"></script>
+    <script>
+        const userEl = document.querySelector('.user');
+        userEl.setAttribute('style', 'display: flex; gap: 32px;')
+
+        userData.results.forEach(user => {
+            const userContent = document.createElement('div');
+            userContent.classList.add('user__content');
+            userContent.setAttribute('style', 'display: flex; \
+                                                        flex-direction: column; \
+                                                        align-items: center;');
+
+            const userName = document.createElement('p');
+            userName.classList.add('user__name');
+            userName.textContent = `${user.name.title} 
+                                    ${user.name.first} 
+                                    ${user.name.last}`;
+
+            const userImg = document.createElement('img');
+            userImg.src = user.picture.large;
+
+            const userEmail = document.createElement('a');
+            userEmail.href = user.email;
+            userEmail.textContent = user.email;
+
+            userContent.appendChild(userName);
+            userContent.appendChild(userImg);
+            userContent.appendChild(userEmail);
+            userEl.appendChild(userContent);
+        });
+    </script>
+</body>
+</html>
